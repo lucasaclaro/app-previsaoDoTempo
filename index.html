@@ -24,21 +24,27 @@
                 <h1 class="text">Weather Forecast</h1>
                 <h3 class="text">Choose the city</h3>
                 <input type="text" name="" id="chooseCity">
-                <button class="button">Search</button>
+                <button class="button" onclick="searchCity()">Search</button>
             </div>
 
             <div class="result">
                 <div class="classResultCity">
                     <span class="material-symbols-outlined">location_on</span>
-                    <h3 id="resultCity">Araraquara</h3>
+                    <h3 id="resultCity"></h3>
                     <img class="conutryFlag" src="https://countryflagsapi.com/png/br" alt="">
                 </div>
                 <div class="classResultWeather">
-                    <h4 class="weatherText">
-                        Cloud
-                    </h4>
-                    <img class="weatherImage" src="" alt="">
-                    <span id="rain" class="material-symbols-outlined">
+                    <div class="weatherConditions">
+                        <h4 class="weatherText">
+                            Cloud
+                        </h4>
+                        <img class="weatherImage" src="https://openweathermap.org/img/wn/01d@2x.png" alt="">
+                    </div>
+                    
+                    <span id="temperature" class="material-symbols-outlined">
+                        device_thermostat
+                        </span>
+                    <span id="humidity" class="material-symbols-outlined">
                         water_drop
                         </span>
                         <span id="wind" class="material-symbols-outlined">
